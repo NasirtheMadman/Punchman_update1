@@ -1,5 +1,6 @@
 ea4bc82a6ad023ab7ee23ee620429895
-::res://::1713144590
+::res://::1713145771
+export_presets.cfg::TextFile::-1::1713144771::0::1::::<><>::
 health_changed_label.tscn::PackedScene::3638557709113252309::1713144555::0::1::::<><>::res://UI/health_changed_label.gd
 icon.svg::CompressedTexture2D::9210562042437682875::1706633378::1706633399::1::::<><>::
 punchmanupdate1.gltf::PackedScene::5052360076362239430::1713144590::1713144591::1::::<><>::
@@ -1039,11 +1040,11 @@ Attack.gd::GDScript::-1::1713122539::0::1::::<>State<>::
 CharacterStateMachine.gd::GDScript::-1::1713134721::0::1::::CharacterStateMachine<>Node<>::
 Damageable.gd::GDScript::-1::1713140208::0::1::::Damageable<>Node<>::
 enemy_slime.gd::GDScript::-1::1713137216::0::1::::<>CharacterBody2D<>::
+FacingCollisionShape2D.gd::GDScript::-1::1713141230::0::1::::FacingCollisionShape2D<>CollisionShape2D<>::
 GroundState.gd::GDScript::-1::1713142481::0::1::::GroundState<>State<>::
+hit.gd::GDScript::-1::1713140234::0::1::::HitState<>State<>::
 Main Menu.gd::GDScript::-1::1706633378::0::1::::<>Control<>::
 player.gd::GDScript::-1::1713140918::0::1::::Player<>CharacterBody2D<>::
-hit.gd::GDScript::-1::1713140234::0::1::::HitState<>State<>::
-FacingCollisionShape2D.gd::GDScript::-1::1713141230::0::1::::FacingCollisionShape2D<>CollisionShape2D<>::
 smash.gd::GDScript::-1::1713141609::0::1::::<>Area2D<>::
 State.gd::GDScript::-1::1713134087::0::1::::State<>Node<>::
 StateDebugLabel.gd::GDScript::-1::1713086152::0::1::::<>Label<>::
