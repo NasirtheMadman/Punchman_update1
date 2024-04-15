@@ -1,0 +1,83 @@
+[gd_scene load_steps=6 format=3 uid="uid://xxm4hdly54iu"]
+
+[ext_resource type="Script" path="res://script/Main Menu.gd" id="1_mp7gu"]
+[ext_resource type="Texture2D" uid="uid://6ag8o3q777dn" path="res://art/Dark VFX 01 - 02/free-city-backgrounds-pixel-art/city 1/6.png" id="2_fcilc"]
+[ext_resource type="Texture2D" uid="uid://d25cmqghyvraf" path="res://art/kenney_ui-pack/PNG/blue_boxCheckmark.png" id="3_702k7"]
+[ext_resource type="Texture2D" uid="uid://cufikbtmmnq8f" path="res://art/kenney_ui-pack/PNG/blue_button01.png" id="3_yrg6p"]
+
+[sub_resource type="FontFile" id="FontFile_msqa5"]
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+
+[node name="Main Menu" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 10.0
+offset_top = 4.0
+offset_right = 2.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_mp7gu")
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 0
+offset_left = -15.0
+offset_top = 1.0
+offset_right = 561.0
+offset_bottom = 325.0
+texture = ExtResource("2_fcilc")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+layout_mode = 0
+offset_left = 449.0
+offset_top = 196.0
+offset_right = 717.0
+offset_bottom = 405.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+
+[node name="BlueButton02" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(-266, -39)
+scale = Vector2(0.65, 0.633333)
+texture = ExtResource("3_yrg6p")
+
+[node name="Quit" type="Button" parent="MarginContainer/VBoxContainer/BlueButton02"]
+offset_left = -84.0
+offset_top = -17.0
+offset_right = 90.0
+offset_bottom = 16.0
+text = "Quit"
+
+[node name="BlueButton01" type="Sprite2D" parent="MarginContainer/VBoxContainer"]
+position = Vector2(-264, -83)
+scale = Vector2(0.647368, 0.613889)
+texture = ExtResource("3_yrg6p")
+
+[node name="Play" type="Button" parent="MarginContainer/VBoxContainer/BlueButton01"]
+offset_left = -84.9204
+offset_top = -16.3462
+offset_right = 88.0796
+offset_bottom = 16.6538
+theme_override_fonts/font = SubResource("FontFile_msqa5")
+text = "Play"
+
+[node name="BlueBoxCheckmark" type="Sprite2D" parent="."]
+position = Vector2(-262, 675)
+texture = ExtResource("3_702k7")
+
+[node name="YellowButton00" type="Sprite2D" parent="."]
+position = Vector2(-354, 347)
+
+[node name="YellowButton01" type="Sprite2D" parent="."]
+position = Vector2(-388, 471)
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BlueButton02/Quit" to="." method="_on_quit_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/BlueButton01/Play" to="." method="_on_play_pressed"]
